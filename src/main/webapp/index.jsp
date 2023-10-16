@@ -6,13 +6,18 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Gulliver</title>
 </head>
 <body>
+	<ul>
 	<c:forEach var="hotel" items="${hoteis}">
-		<p>
+		<li>
 		<c:out value="${hotel.nome}"></c:out>
-		</p>
+		<c:out value="${hotel.cidade}"></c:out>
+		<c:out value="${hotel.endereco}"></c:out>
+		<c:out value="${hotel.regiao}"></c:out>
+		</li>
 	</c:forEach>
+	</ul>
 </body>
 </html>
